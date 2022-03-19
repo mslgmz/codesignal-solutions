@@ -4,7 +4,10 @@
   "description": "Solutions for problems on code signal",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec.js"
+    "test": "mocha ./intro/**/*.spec.js",
+    "test-watch": "mocha -R list -w ./intro/**/*.spec.js",
+    "test-single": "mocha",
+    "test-single-watch": "mocha -R list -w"
   },
   "repository": {
     "type": "git",
